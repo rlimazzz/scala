@@ -1,5 +1,5 @@
 // thats the most strange way to import a lib that ive ever seen
-//> using dep "com.lihaoyi::os-lib:0.11.8"
+//> using toolkit 0.9.2
 
 @main 
 def countFiles(): Unit = 
