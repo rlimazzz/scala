@@ -23,6 +23,9 @@ class Parametrization(text: String*) {
         // To more complex outputs, it's recommended to use {} to output your string or etc
         println(s"${numsNames(i)} : ${numsNames2(i)}")
 
+    val listz : List[Int] = List(1, 2, 3)
+
+    listz.foreach(arg => if (arg == listz.last) print(arg + "\n") else print(arg + ", "))
 
     for(i <- 0 to 2) 
         print(greetStrings(i))
