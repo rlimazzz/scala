@@ -22,6 +22,12 @@
     val fruits3 = fruits2 :+ "Blueberry"
     println(fruits3)
 
+    val fruitscombined = fruits2 ::: fruits3
+    println(fruitscombined)
+
+    val filteredfruits3 = fruits3.filterNot(s => s == "Grapes")
+    println(s"filtered fruits without grapes : $filteredfruits3")
+
     println(s"Finding the ones that has the same specified size(4): ${fruits2.filter(s => s.length == 6)}")
     println(s"Counting Ones : $resultCountOnes")
     println(lista)
