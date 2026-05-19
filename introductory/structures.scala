@@ -15,7 +15,13 @@
     println(s"List without some first n elements from left to right : ${fruits.drop(1)}")
     println(s"List without n elements from right to left : ${fruits.dropRight(1)}")
     println(s"Finding with exists some specified String(Grapes) in our List :${fruits.exists(output => output == "Grapes")}")
+    
+    // Note : Here you can see that the : always points to the collection(List)
     val fruits2 = "Strawberry" +: fruits
+    println(fruits2)
+    val fruits3 = fruits2 :+ "Blueberry"
+    println(fruits3)
+
     println(s"Finding the ones that has the same specified size(4): ${fruits2.filter(s => s.length == 6)}")
     println(s"Counting Ones : $resultCountOnes")
     println(lista)
