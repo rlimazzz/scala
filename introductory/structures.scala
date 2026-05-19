@@ -25,8 +25,15 @@
     val fruitscombined = fruits2 ::: fruits3
     println(fruitscombined)
 
+    // Removing from Lists
+    // Removing specific element
     val filteredfruits3 = fruits3.filterNot(s => s == "Grapes")
     println(s"filtered fruits without grapes : $filteredfruits3")
+
+    // Removing various elements
+    val needToRemove = List("Apple", "Orange")
+    val resultedFruitsList = fruits3.diff(needToRemove)
+    println(s"Removing various elements (Orange and Apple) : ${resultedFruitsList}")
 
     println(s"Finding the ones that has the same specified size(4): ${fruits2.filter(s => s.length == 6)}")
     println(s"Counting Ones : $resultCountOnes")
