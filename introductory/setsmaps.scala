@@ -33,4 +33,10 @@ import scala.collection.mutable.Map
     treasureMap += (2 -> "Find big X on ground.")
     treasureMap += (3 -> "Dig.")
     println(treasureMap(2))
+
+    //functional style of a for loop
+    for(arg <- treasureMap) {
+        println(arg)
+    }
+
 }
